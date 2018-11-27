@@ -8,3 +8,11 @@ to execute the move instruction that is part of the implementation.
 */
 
 import "turns";
+
+function BackUp(){
+	turnAround();
+	if(frontIsClear()){
+    move();
+  }
+	turnAround();
+}
